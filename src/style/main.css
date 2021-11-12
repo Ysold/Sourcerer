@@ -1,0 +1,373 @@
+.container{
+    max-width: 70rem;
+    margin: 0 auto;
+    width: 100%;
+}
+.grayBar {
+    background-color: #f2f2f2;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 25rem;
+}
+.popInfo{
+    text-align: left;
+    background-color: #40f7c6;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+.popInfo > p{
+    font-size: 1rem;
+    color: rgb(94, 93, 93);
+    padding-left: 15%;
+}
+.shareProfile{
+    text-align: left;
+    margin-top: 3.6rem;
+}
+.shareList{
+    display: flex;
+}
+.shareList > li {
+    padding-left: 1.5rem;
+    list-style: none;
+    text-decoration: underline;
+    color: rgb(94, 93, 93);
+}
+.bioContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+.bioAndLocation{
+    padding-top: 1.5rem;
+}
+.containerGeneralInfo, .infoContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.bio{
+    text-align: left;
+    line-height: 0.5;
+}
+.viewerName{
+    padding-left: 2rem;
+    font-size: 2.5rem;
+    color: rgb(71, 70, 70);
+    font-weight: 600;
+}
+.commitsReposLinesCodeBox, .refresh, .followInfo{
+    background-color: #E9E9E9;
+    margin: 1rem;
+    padding: 1rem 1.5rem;
+    text-align: left;
+    color: inherit;
+    text-decoration: none;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+}
+.commitsReposLinesCodeBox:hover{
+    background-color: rgb(124, 255, 189);
+}
+.tagNameInfo{
+    padding-right: 1rem;
+}
+.languageItem{
+    display: flex;
+    background-color: #E9E9E9;
+    padding: 0.4rem 1rem;
+    border-radius: 0.7rem;
+}
+.refresh{
+    background-color: #00e7aa;
+    display: flex;
+}
+.refresh:hover{
+    background-color: #8fe5ce;
+}
+.followInfo{
+    background-color: #8fe5ce;
+}
+.followInfo:hover{
+    background-color: #02ecae;
+}
+.overviewContainer{
+    margin-top: 5rem;
+}
+.containerLanguages{
+    margin-top: 2rem;
+}
+.containerLanguage{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+.languagesHeader{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.languages{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    text-align: left;
+}
+.langItem{
+    background-color: rgb(240, 241, 243);
+    color: rgb(77, 79, 80);
+    border: 1;
+    border-color: rgb(208, 210, 212);
+    border-radius: 2%;
+    width: 17rem;
+}
+.langItem:hover{
+    background-color: rgb(126, 255, 212);
+}
+.itemlang{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #dad8d8;
+    align-self: center;
+    padding: 0.3rem 0.7rem;
+    border-radius: 0.5rem;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+.langName{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+.langTagCont{
+    display: flex;
+    justify-content: space-between;
+}
+.tagIconLang{
+    align-self: center;
+    padding-right: 0.5rem;
+}
+.commitsPerLang{
+    background-color: #c1fcec;
+    border:1;
+    border-color: #8fe5ce;
+    padding-left: 1rem;
+}
+.locPerLang, .langName{
+    padding-left: 1rem;
+}
+.text{
+    font-size: 1rem;
+    margin: 0;
+}
+.langTitle{
+    text-align: left;
+    font-size: 2.5rem;
+    color: rgb(71, 70, 70);
+}
+.avatarPhoto{
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+}
+.descFollowers{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.pieContainer{
+    width: 30rem;
+    background-color: rgb(240, 241, 243);
+    border-radius: 1rem;
+}
+.pieLangCont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.pie{
+    margin: 6rem auto;
+}
+.repoHeader{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+    margin-bottom: 2.0rem;
+}
+.repoInfo, .overviewheader{
+    padding-top: 2.0rem;
+}
+.repoArrayHeader{
+    display: flex;
+    justify-content: space-around;
+}
+.repoItemContainer{
+    display: flex;
+    justify-content: space-around;
+}
+.languagesPerRepo{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+.infoRepLine{
+    text-align: justify;
+}
+table, td{
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 0.1px solid rgb(235, 232, 232);
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+table tr:nth-child(2n+1){
+    background-color: rgb(240, 241, 243);
+}
+table tr{
+    background-color: rgb(247, 249, 253);
+}
+table tr:hover{
+    background-color: #b1ffea;
+}
+tbody:before {
+    line-height:2.5rem;
+    content:"-";
+    color:white;
+    display:block;
+}
+th{
+    text-align: left;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+th:first-child{
+    width: 10%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+th:nth-child(2){
+    width: 45%;
+}
+.signerAvatar{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+.ownerAvatar{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    align-self: center;
+}
+.commitsRowContainer{
+    display: flex;
+    justify-content: space-around;
+}
+.commitItemGreen, .commitItemGray{
+    width: 2.5rem;
+    height: 1rem;
+    border-radius: 0.1rem;
+    background-color: lightgray;
+    margin-bottom: 0.5rem;
+}
+.commitItemGreen{
+    background-color: #c1fcec;
+}
+.repoNameRowContainer, .repoDescRowCont{
+    display: flex;
+}
+.repoNameTxt{
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    margin: 0.3rem;
+}
+.gitCheckIcon, .tagIcon{
+    align-self: center;
+    font-size: 1rem;
+}
+.tagIcon{
+    padding-left: 1rem;
+}
+.repoTagIcon{
+    align-self: center;
+    font-size: 0.7rem;
+    padding-right: 1rem;
+    margin-left: 0.8rem;
+}
+
+.productiveTimeContainer{
+    width: 40%;
+    background-color: rgb(71, 255, 230);
+    padding: 1.5rem;
+}
+.mostProductiveDay{
+    width: 40%;
+    padding: 1.5rem;
+    background-color: rgb(124, 255, 189);
+}
+.factsItemCont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.factsHeader{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.titleCont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.title{
+    text-align: left;
+    font-size: 2rem;
+    margin: 0;
+    font-weight: 600;
+    color: #838282;
+}
+.usersProd{
+    display: flex;
+    margin-top: 3rem;
+}
+.textUsersProd{
+    margin: 0 0.7rem;
+    font-size: 1.3rem;
+    color: #838282;
+}
+
+.textFacts{
+    margin: 0;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #838282;
+}
+.preferencesContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 70%;
+}
+.preferSpacesCont{
+    width: 30%;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+.preferCamelCaseCont{
+    width: 30%;
+    margin-top: 2rem;
+    padding: 2rem;
+    text-align: left;
+}
+.graphCont{
+    z-index: 3;
+}
